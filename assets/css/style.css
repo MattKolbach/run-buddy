@@ -56,11 +56,11 @@ header nav ul li a {
 
 /* FOOTER STYLES START */
 footer {
-  display: flex;
-  justify-content:space-between;
-  flex-wrap: wrap;
   background: #fce138;
   padding: 40px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -93,6 +93,21 @@ section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.hero-cta {
+  width: 35%;
+  text-align: right;
+  margin: 3.5%;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.hero-cta h2 {
+  font-style: italic;
+  font-size: 55px;
+  color: #fce138;
 }
 
 .hero-form {
@@ -133,21 +148,6 @@ section {
   padding: 10px 20px;
   font-size: 16px;
 } 
-.hero-cta {
-  width: 35%;
-  text-align: right;
-  margin: 3.5%;
-  color: #fff;
-  font-size: 18px;
-  line-height: 1.3;
-}
-
-.hero-cta h2 {
-  font-style: italic;
-  font-size: 55px;
-  color: #fce138;
-}
-
 /* HERO STYLES END */
 
 
@@ -156,10 +156,10 @@ section {
   font-size: 55px;
   border-bottom: 3px solid;
   color: #024e76;
+  padding-bottom: 20px;
   text-align: center;
   margin: 0 auto 35px auto;
   width: 50%;
-  padding-bottom: 20px;
 }
 
 .primary-border {
@@ -185,6 +185,10 @@ section {
 
 
 /* WHAT YOU DO STYLES START */
+.steps { 
+  background: #fce138;
+}
+
 .step {
   margin: 50px auto;
   padding-bottom: 50px;
@@ -196,14 +200,30 @@ section {
   justify-content: space-between;
 }
 
-.steps { 
-  background: #fce138;
-}
-
 .step h3 {
   color: #024e76;
   font-size: 46px;
   flex: 1 30%;
+}
+
+.step-info {
+  flex: 2 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.step-img {
+  flex: 1 12%;
+  margin-right: 20px;
+}
+
+.step-img img {
+  max-width: 100%;
+}
+
+.step-text {
+  flex: 12;
 }
 
 .step-text p {
@@ -215,26 +235,6 @@ section {
   font-size: 26px;
   line-height: 1.5;
   color: #024e76;
-}
-
-.step-info {
-  flex: 2 70%;
-  display:flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.step-img {
-  flex: 1 12%;
-  margin-right: 20px;
-}
-
-.step-text {
-  flex: 12;
-}
-
-.step-img img {
-  max-width: 100%;
 }
 
 /* WHAT YOU DO STYLES END */
@@ -249,10 +249,10 @@ section {
 }
 
 .trainer {
-  margin: 0 auto 20px auto;
+  margin: 20px;
+  flex: 1;
   background: #024e76;
   color: #fce138;
-  flex: 1;
 }
 
 .trainer img {
@@ -288,6 +288,17 @@ section {
   color: #fce138;
 }
 
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-info > * {
+  flex: 1;
+  margin: 15px;
+}
+
 .contact-info iframe {
   height: 400px;
 }
@@ -302,25 +313,10 @@ section {
 }
 
 .contact-info p, .contact-info address {
-  margin: 16px 0;
+  margin: 20px 0;
   line-height: 1.5;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
-}
-
-.contact-info a {
-  color: #fce138;
-}
-
-.contact-info {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: flex;
-}
-
-.contact-info > * {
-  flex: 1;
-  margin: 15px;
 }
 
 .contact-form input, .contact-form textarea {
@@ -338,11 +334,16 @@ section {
   width: 100%;
   border: none;
   background: #fce138;
-  color:#024e76;
+  color: #024e76;
   text-align: center;
   padding: 15px 0;
   font-size: 16px;
 }
+
+.contact-info a {
+  color: #fce138;
+}
+
 
 /* REACH OUT STYLES END */
 
